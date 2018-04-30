@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="button_confirm">确定</string>
+    <string name="button_cancel">取消</string>
+
+    <string name="dialog_title_notice">提示</string>
+    <string name="dialog_title_alert">警告</string>
+    <string name="dialog_title_more_info">更多信息</string>
+
+    <string name="download_progress">当前下载进度：%1$s %%</string>
+    <string name="download_success">文件下载完成</string>
+    <string name="download_failed">文件下载失败</string>
+</resources>

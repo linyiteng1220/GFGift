@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GFGift.iml" filepath="$PROJECT_DIR$/GFGift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lyt/lyt.iml" filepath="$PROJECT_DIR$/lyt/lyt.iml" />
+    </modules>
+  </component>
+</project>

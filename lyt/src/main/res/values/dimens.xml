@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 字体大小 -->
+    <dimen name="font_size_smaller">12sp</dimen>
+    <dimen name="font_size_small">14sp</dimen>
+    <dimen name="font_size_medium">18sp</dimen>
+    <dimen name="font_size_large">22sp</dimen>
+
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="swipe_offset_start">0dp</dimen>
+    <dimen name="swipe_offset_end">64dp</dimen>
+
+    <dimen name="item_margin_32dp">32dp</dimen>
+    <dimen name="item_margin">16dp</dimen>
+    <dimen name="item_padding">8dp</dimen>
+    <dimen name="item_padding_4dp">4dp</dimen>
+    <dimen name="image_view_padding">2dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+
+    <dimen name="guide_question_text_margin_top">32dp</dimen>
+    <dimen name="guide_question_text_margin_bottom">8dp</dimen>
+    <dimen name="guide_answer_text_margin">4dp</dimen>
+
+    <dimen name="image_edit_view_max_size">320dp</dimen>
+    <dimen name="alert_def_padding">18dp</dimen>
+    <dimen name="design_navigation_icon_size" tools:override="true">20dp</dimen>
+    <dimen name="nav_portrait_margin_top">0dp</dimen>
+
+    <dimen name="image_max_width">160dp</dimen>
+
+</resources>

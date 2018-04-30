@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <!-- 自定义的Dialog主题 -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="alertDialogTheme">@style/AlertDialogCustom</item>
+        <item name="android:actionOverflowButtonStyle">@style/WhiteMenuButtonMoreTheme</item>
+        <item name="actionOverflowButtonStyle">@style/WhiteMenuButtonMoreTheme</item>
+        <item name="android:popupAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:windowEnterAnimation">@anim/window_enter</item>
+        <item name="android:windowExitAnimation">@anim/window_exit</item>
+    </style>
+
+    <style name="WhiteMenuButtonMoreTheme" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_more_white</item>
+    </style>
+
+    <style name="AppTheme.NoTitleFullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ToolbarTitle">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 自定义Dialog显示风格 -->
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <!-- NegativeButtonStyle -->
+        <item name="buttonBarNegativeButtonStyle">@style/ButtonBarNegative</item>
+        <!-- PositiveButtonStyle -->
+        <item name="colorAccent">@color/color_accent</item>
+    </style>
+
+    <style name="ButtonBarNegative" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="CardViewItem" parent="CardView">
+        <item name="android:layout_marginTop">@dimen/item_padding</item>
+        <item name="android:layout_marginBottom">@dimen/item_padding</item>
+        <item name="android:layout_marginLeft">@dimen/item_margin</item>
+        <item name="android:layout_marginRight">@dimen/item_margin</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="CardItem">
+        <item name="android:layout_marginBottom">@dimen/item_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="PrimaryButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="colorButtonNormal">@color/grey</item>
+    </style>
+
+    <style name="ToolbarColored" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+</resources>

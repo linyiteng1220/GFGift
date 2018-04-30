@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">玉堆堆</string>
+
+    <string name="menu_search">搜索</string>
+    <string name="menu_stop_download">停止下载</string>
+
+    <string name="toast_tv_name_empty">剧名不能为空</string>
+    <string name="toast_parse_error">数据无法解析</string>
+    <string name="toast_network_error">网络异常</string>
+    <string name="toast_server_error">服务器异常</string>
+    <string name="toast_start_to_download">排队下载：%1$s</string>
+
+    <string name="dialog_title_input_tv_name">请输入电视剧名</string>
+    <string name="dialog_title_stop_download">停止下载</string>
+    <string name="dialog_info_searching">正在搜索，请稍候……</string>
+    <string name="dialog_info_parsing">正在分析数据，请稍候……</string>
+    <string name="dialog_info_stop_download_desc">一旦停止，将无法继续下载了，若要继续下载，只能重新搜索下载，已下载的视频不受影响，确定要停止么？</string>
+    <string name="dialog_info_video_exist">该电视剧正在排队下载中，不会重复下载</string>
+
+    <string name="index_label_guide">使用说明</string>
+    <string name="index_label_motto">时光不老，我们不散</string>
+    <string name="index_guide_search">1. 点击右上角放大镜图标\n2. 输入电视剧名进行搜索\n3. 点击下载搜索到的电视剧</string>
+    <string name="index_guide_download">下载的视频将存放到：\n%1$s</string>
+    <string name="index_guide_bg_running_info">请设置 APP 为允许后台运行，否则无法持续下载</string>
+    <string name="index_search_result"> 搜索结果：</string>
+
+    <string name="tv_total_num">共 %1$d 集</string>
+    <string name="tv_starring">主演：%1$s</string>
+
+    <string name="notification_title">视频下载</string>
+    <string name="notification_desc_downloading">若要停止下载，请手动 X 掉 APP</string>
+    <string name="notification_desc_downloaded">全部下载完毕</string>
+</resources>

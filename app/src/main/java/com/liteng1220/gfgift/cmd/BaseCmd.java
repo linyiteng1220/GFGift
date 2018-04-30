@@ -24,7 +24,7 @@ public abstract class BaseCmd implements Cmd {
     private static final String RESULTS_MSG = "eJzHLLUH4YHAAKXYAUg="; // msg
     private static final String RESULTS_DATA = "eJxWLSSWxNJBAAENAAGb"; // data
 
-    private static final String VALUE_APP_TOKEN = ""; // 替换成 埋堆堆 APP 里的个人 TOKEN
+    private static final String VALUE_APP_TOKEN = ""; // 替换成 埋堆堆 APP 里的个人 TOKEN ，需要先登录
     private static final String VALUE_CHANNEL = "1000";
     private static final String VALUE_OS = "Android";
     private static final String VALUE_VERSION = "1.18.4";

@@ -19,6 +19,7 @@ public class CmdSearch extends BaseCmd {
     private static final String JSON_KEY_UUID = "eJwGrLcG1YMAQAEYbQG4"; // uuid
     private static final String JSON_KEY_STARRING = "eJwBrLkksKsBrLMSwcAD5IDLaw=="; // starring
     private static final String JSON_KEY_TOTAL_NUM = "eJwRryS9JzPREArzQUADz8DAVQ=="; // totalNum
+    private static final String JSON_KEY_INTRODUCTION = "eJzULzCspyk8pUTYS7JzM8DACF0YBSM="; // introduction
 
     @Override
     protected String getAction() {
@@ -78,6 +79,7 @@ public class CmdSearch extends BaseCmd {
             dataItem.uuid = vodJsonObject.optString(TextConverter.decode(JSON_KEY_UUID));
             dataItem.starring = vodJsonObject.optString(TextConverter.decode(JSON_KEY_STARRING));
             dataItem.totalNum = vodJsonObject.optInt(TextConverter.decode(JSON_KEY_TOTAL_NUM));
+            dataItem.intro = vodJsonObject.optString(TextConverter.decode(JSON_KEY_INTRODUCTION));
             dataItemList.add(dataItem);
         }
 
@@ -93,6 +95,7 @@ public class CmdSearch extends BaseCmd {
         public String uuid;
         public String starring;
         public int totalNum;
+        public String intro;
     }
 
 }

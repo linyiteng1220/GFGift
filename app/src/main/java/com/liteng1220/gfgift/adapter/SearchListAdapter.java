@@ -57,5 +57,6 @@ public class SearchListAdapter extends BaseAdapter {
         public String name;
         public String totalNum;
         public String starring;
+        public String intro;
     }
 }

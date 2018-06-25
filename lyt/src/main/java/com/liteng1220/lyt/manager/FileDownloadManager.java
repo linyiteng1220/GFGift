@@ -74,18 +74,18 @@ public class FileDownloadManager {
             is = responseBody.byteStream();
             fos = new FileOutputStream(file, true);
 
-            byte[] buffer = new byte[4096];
+            byte[] buffer = new byte[1024 * 8];
             int len;
             while ((len = is.read(buffer)) != -1) {
                 if (contentLength > 0 && fileDownloadListener != null) {
                     downloadLength += len;
                     final float percent = downloadLength * 100f / contentLength;
-                    HandlerManager.getInstance().postUiThread(new Runnable() {
+                    HandlerManager.getInstance().postThread(new Runnable() {
                         @Override
                         public void run() {
                             fileDownloadListener.onProgressChange(url, decimalFormat.format(percent));
                         }
-                    });
+                    }, 0);
                 }
 
                 fos.write(buffer, 0, len);
@@ -142,10 +142,25 @@ public class FileDownloadManager {
     }
 
     public interface FileDownloadListener {
+        /**
+         * 下载进度通知，回调于子线程
+         * @param url
+         * @param percent
+         */
         void onProgressChange(String url, String percent);
 
+        /**
+         * 下载完成，回调于主线程
+         * @param url
+         * @param filePath
+         * @param mimeType
+         */
         void onSucceed(String url, String filePath, String mimeType);
 
+        /**
+         * 下载失败，回调于主线程
+         * @param url
+         */
         void onFail(String url);
     }
 }

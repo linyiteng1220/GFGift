@@ -52,6 +52,7 @@ public class VideoSearchStore extends WebStore {
             data.totalNum = GfApplication.getContext().getString(R.string.tv_total_num, dataItem.totalNum);
             data.starring = GfApplication.getContext().getString(R.string.tv_starring, dataItem.starring);
             data.uuid = dataItem.uuid;
+            data.intro = dataItem.intro;
             adapterDataList.add(data);
         }
 

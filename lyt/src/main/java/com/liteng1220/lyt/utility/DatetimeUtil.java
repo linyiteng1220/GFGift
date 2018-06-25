@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-public class DatatimeUtil {
+public class DatetimeUtil {
 
     public static int getCurrentHour() {
         return Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
